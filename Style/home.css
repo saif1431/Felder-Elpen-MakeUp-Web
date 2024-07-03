@@ -1,0 +1,1115 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: logo;
+  src: url('higuen.woff');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f5ec;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+#home {
+  width: 100vw;
+  height: fit-content;
+  background-color: #f7f5ec;
+  position: relative;
+}
+
+.homeSect {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homeSect1 {
+  width: 78%;
+  height: 100%;
+  background-color: #f7f5ec;
+}
+.homeSect2 {
+  position: fixed;
+  left: 78%;
+  width: 25%;
+  height:100vh;
+  background-color: #ac663e;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 78%;
+  padding: 1vw 8.5vw;
+  position: relative;
+  position: fixed;
+  background-color: #f7f5ec;
+  /* background-color: red; */
+  z-index: 1000;
+}
+nav a{
+  text-decoration: none;
+}
+.logo {
+
+  width: auto;
+  height: 10vh;
+  margin-left: 1vw;
+  transition: height 0.3s ease;
+}
+
+.logo h1 {
+font-family: logo;
+font-weight: 500;
+color: #00524E;
+font-size: 3vw;
+transition: font-size 0.3s ease;
+
+}
+.logo h6 {
+  text-align: center;
+  font-size: 1vw;
+  font-family: logoFont;
+  margin-top: .5vw;
+  color: #00524E;
+  font-weight: 100;
+  transition: font-size 0.3s ease;
+}
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  font-size: 2vw;
+}
+#inta {
+  background-color: #003D3A;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.2vw;
+  padding: .4vw;
+  margin-top: 0vw;
+  cursor: pointer;
+}
+
+.menubar {
+  display: none;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(203, 89, 7);
+  display: none;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -o-transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+  z-index: 1000;
+  font-family: "Asap", sans-serif;
+}
+
+.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1vw 2vw;
+}
+
+.slide i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+.logo1 h4 {
+  text-align: center;
+  margin-left: 10vw;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-family: "Asap", sans-serif;
+}
+hr {
+  position: absolute;
+  width: 50%;
+  left: 12%;
+  color: #fff;
+}
+/* Slider navbar--------------------- */
+.slide-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2vw;
+}
+.slide-nav ul {
+  list-style: none;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5vw;
+}
+.slide-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  font-family: "Asap", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+.slide-nav ul li a:hover {
+  color: #003D3A;
+}
+.slide-nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+}
+
+.slide-nav a.active{
+  color: #003D3A;
+  font-weight: 400;
+}
+
+
+.detail {
+  padding: 2vw;
+  color: #ffff;
+  font-weight: 200;
+  margin-left: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5vw;
+  font-size: 1.2vw;
+}
+.detail h3 {
+  font-weight: 200;
+  font-family: "Asap", sans-serif;
+}
+.detail a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Asap", sans-serif;
+  
+}
+.closeIcon {
+  width: 100%;
+  /* background-color: red; */
+  display: none;
+
+}
+ 
+.detail a:hover{
+ color: #003D3A;
+}
+.closeIcon i{
+  font-size: 8vw;
+  font-family: "Asap", sans-serif;
+}
+.social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vw;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+.social-icon i {
+  background-color: #fff;
+  padding: 0.5vw;
+  border-radius: 50%;
+  font-weight: 300;
+  color: rgb(203, 89, 7);
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  font-size: 1.3vw;
+  font-family: "Asap", sans-serif;
+}
+.social-icon i:hover {
+  background-color: #003D3A;
+  color: #fff;
+}
+/* Lanuages----------------- */
+.privacy {
+margin-left: 3vw;
+margin-top: 3vw;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.privacy h5{
+  color: white;
+  padding: .4vw;
+  font-size: 1.2vw;
+  font-weight: 300;
+  font-family: "Asap", sans-serif;
+}
+.laguage {
+  margin-left: 2.4vw;
+  padding: 1vw;
+  margin-top: .8vw;
+}
+.laguage h4 {
+  font-size: 1vw;
+  color: #fff;
+  font-family: "Asap", sans-serif;
+}
+.lang-name{
+  display: flex;
+  align-items: center;
+  gap: .3vw;
+}
+.lang-name a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2vw;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  font-family: "Asap", sans-serif;
+}
+.lang-name .active {
+  border-right: none;
+}
+.lang-name span{
+  font-size: 1.4vw;
+}
+.lang-name a:hover {
+  color: #003D3A;
+}
+
+
+
+/* Mian Contecxt------------------- */
+.main-context {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10vw;
+}
+.list2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1vw;
+  gap: .7vw;
+}
+
+.img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.images{
+  width: 100%;
+  height: fit-content;
+  margin-top: 2vw;
+}
+.img1 img {
+  width: 60vw;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.images a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  /* margin-top: 2vw; */
+}
+.main-text {
+  width: 70%;
+  height: 90%;
+  margin-top: 1.8vw;
+}
+.main-text h4 {
+  font-size: 1.3vw;
+  color: #555;
+  text-align: center;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+}
+  .main-img1 {
+    width: 60%;
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .main-img1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/homeimg4.webp');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    z-index: 1;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .main-img1:hover::before {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    background: none;
+    background-image: url('/images/homeimg4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.images h1 {
+  /* background-color: red; */
+  height: 95%;
+  width: 100%  ;
+    color: #dedbdbd4;
+    font-size: 9.5vw;
+   font-family: logo;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .main-img2 {
+    width: 60%;
+    height: 45vh;
+    position: relative;
+    margin-top: 1vw;
+    overflow: hidden;
+  }
+  
+  .main-img2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/homeimg4.webp');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    z-index: 1;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .main-img2:hover::before {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    background: none;
+    background-image: url('/images/homeimg4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-img3 {
+    width: 60%;
+    height: 45vh;
+    position: relative;
+    margin-top: 1vw;
+    overflow: hidden;
+  }
+  
+  .main-img3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/homeimg4.webp');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    z-index: 1;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .main-img3:hover::before {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    background: none;
+    background-image: url('/images/homeimg4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-img4 {
+    width: 60%;
+    height: 45vh;
+    position: relative;
+    margin-top: 1vw;
+    overflow: hidden;
+  }
+  
+  .main-img4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/homeimg4.webp');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/homeimg4.webp');
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    z-index: 1;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .main-img4:hover::before {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    background: none;
+    background-image: url('/images/homeimg4.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+  margin-top: 4vw;
+  padding: 2vw 2vw;
+}
+.footer p{
+  font-size: 1.4vw;
+  font-family: "Asap", sans-serif;
+ font-weight: 300;
+}
+ button{
+  padding: .7vw 1.2vw;
+  border: none;
+  outline: none;
+  font-size: 1.4vw;
+  background-color: #AC663E;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #c35f25 ;
+}
+
+@media screen and (width >= 300px) and (width < 768px) {
+  .logo{
+      width: 55%;
+      height: auto;
+      font-size: 1rem;
+      
+  }
+  .logo h1{
+    font-size: 8vw;
+  }
+
+  .logo h6{
+    text-align: center;
+    font-size: 3.5vw;
+  }
+  .logo p{
+    text-align: center;
+  }
+  .logo img {
+    width: 70%;
+    height: 70%;
+  }
+  .main-context a{
+    margin-top: 6vw;
+  }
+  .nav-item {
+    font-size: 7vw;
+  }
+  .main-context{
+    margin-top: 35vw;
+  }
+  .detail a{
+    font-size: 5.4vw;
+  }
+  .img1 img{
+    width: 90%;
+    height: 30%;
+  }
+  #inta{
+    display: none;
+  }
+  .menubar{
+    display: block;
+margin-right  : 0vw;
+  }
+  nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    height: 10%;
+   padding: 5vw;
+  }
+  .closeIcon{
+    width: 72%;
+ display: flex;
+ align-items: center;
+ justify-content: end;
+padding: 5vw;
+  }
+
+  .homeSect1{
+    width: 100%;
+  }
+  .lang-name span{
+    font-size: 5.5vw;
+  }
+  .homeSect2 {
+display: none;
+z-index: 1000;
+-webkit-transition: width 0.5s ease, -webkit-transform 0.5s ease;
+transition: width 0.5s ease, -webkit-transform 0.5s ease;
+-o-transition: transform 0.5s ease, width 0.5s ease;
+transition: transform 0.5s ease, width 0.5s ease;
+transition: transform 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .slide{
+    -webkit-transition: width 2s ease, -webkit-transform 0.5s ease;
+    transition: width 2s ease, -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease, width 2s ease;
+    transition: transform 0.5s ease, width 2s ease;
+    transition: transform 0.5s ease, width 2s ease, -webkit-transform 0.5s ease;
+    z-index: 1000;
+  }
+  .slide i {
+    font-size: 7vw;
+  }
+  .logo1 h4 {
+    font-size: 4vw;
+  }
+  .slide-nav ul {
+    padding: 4vw;
+    gap: 2vw;
+    margin-left: 8vw;
+  }
+  .slide-nav ul li a {
+    font-size: 5vw;
+    
+  }
+  .slide-nav ul li a:active{
+    color:#003D3A ;
+  }
+  .detail {
+    padding: 4vw;
+    font-size: 5vw;
+    gap: 2vw;
+    margin-left: 8vw;
+    margin-top: 3vw;
+  }
+  .social-icon {
+    margin-left: 10vw;
+    gap: 2vw;
+    cursor: pointer;
+  }
+  .social-icon i {
+    padding: 1vw;
+    font-size: 5vw;
+  }
+  .list2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2vw;
+    margin-top: 8vw;
+  }
+  .laguage {
+    padding: 4vw;
+    margin-left: 6vw;
+  }
+  .privacy {
+    margin-left: 10vw;
+margin-top:7vw;display: -webkit-box;display: -ms-flexbox;display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+gap: 2vw;
+  }
+  .privacy h5{
+    font-size: 5vw;
+  }
+  .laguage h4 {
+    font-size: 5vw;
+  }
+  .lang-name {
+    margin-top: 1vw;
+  }
+  .lang-name a {
+    font-size: 5vw;
+  }
+  .main-text {
+    width: 90%;
+    font-size: 6vw;
+  }
+  .main-text h4 {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 5vw;
+    /* text-align: start; */
+    
+  }
+  .main-img1,
+  .main-img2,
+  .main-img3,
+  .main-img4 {
+    width: 90%;
+    height: 40vw;
+  }
+  .main-context h1 {
+    font-size: 18vw;
+  }.footer {
+    padding: 5vw 0vw;
+    gap: 5vw;
+  }
+
+  .footer p {
+    width: 90%;
+    margin-top: 10vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+  button{
+    width: 35%;
+    padding: 3vw 1vw;
+    font-size: 5vw;
+    margin-top: 4vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .nav-item {
+      font-size: 7vw;
+    }
+    .main-context{
+      margin-top: 20vw;
+    }
+    .detail a{
+      font-size: 3.3vw;
+    }
+    .img1 img{
+      width: 85%;
+      height: 30%;
+      margin-top: 5vw;
+    }
+    .homeSect2 {
+      width: 20%;
+      display: none;
+      z-index: 1000;
+      -webkit-transition: width 0.5s ease, -webkit-transform 0.5s ease;
+      transition: width 0.5s ease, -webkit-transform 0.5s ease;
+      -o-transition: transform 0.5s ease, width 0.5s ease;
+      transition: transform 0.5s ease, width 0.5s ease;
+      transition: transform 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
+        }
+    #inta{
+      display: none;
+    }
+    .menubar{
+      display: block;
+    }
+    nav{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%;
+      z-index: 1000;
+      padding: 4vw 7.5vw;
+      /* height: 15%; */
+      gap: 20vw;
+    }
+    .closeIcon{
+      width: 72%;
+      padding: 4vw 7.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    .lang-name span{
+      font-size: 3.5vw;
+    }
+    .closeIcon i{
+      font-size: 5vw;
+    }
+    .logo{
+      width: 50%;
+      height: auto;
+      font-size: 1rem;
+      margin-top: -2vw;
+    }
+    .logo h1{
+      font-size: 6.5vw;
+    }
+    .logo h6
+    {
+      text-align: center;
+  font-size: 2.5vw;
+    }
+    .homeSect1{
+      width: 100%;
+     
+    }
+    .homeSect2 {
+  display: none;
+    }
+    .slide i {
+      font-size: 2vw;
+    }
+    .logo1 h4 {
+      font-size: 4vw;
+    }
+    .slide{
+      width: 100%;
+    }
+    .slide-nav ul {
+      padding: 3vw;
+      gap: 1.5vw;
+      margin-left: 8vw;
+    }
+    .slide-nav ul li a {
+      font-size: 3.3vw;
+      
+    }
+    .slide-nav ul li a:active{
+      color:#003D3A ;
+    }
+    .detail {
+      padding: 8vw;
+      font-size: 3.3vw;
+      gap: 2vw;
+      margin-left: 2vw;
+    }
+    .social-icon {
+      margin-left: 10vw;
+      gap: 2vw;
+    }
+    .social-icon i {
+      padding: 1vw;
+      font-size: 3.3vw;
+    }
+    .list2{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 1vw;
+      margin-top: 8vw;
+    }
+    .laguage {
+      padding: 3vw;
+      margin-left: 7vw;
+    }
+    .privacy {
+      margin-left: 10vw;
+  margin-top:7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5vw;
+    }
+    .privacy h5{
+      font-size: 3.3vw;
+    }
+    .laguage h4 {
+      font-size: 3.3vw;
+    }
+    .lang-name {
+      margin-top: 1vw;
+    }
+    .lang-name a {
+      font-size: 3.3vw;
+    }
+    .main-text {
+      width: 90%;
+      font-size: 6vw;
+    }
+    .main-text h4 {
+      font-size: 3.5vw;
+      text-align: center;
+      margin-top: 1vw;
+      
+    }
+    .main-img1,
+    .main-img2,
+    .main-img3,
+    .main-img4 {
+      width: 90%;
+      height: 40vw;
+    }
+    .main-context h1 {
+      font-size: 15vw;
+    }
+    .footer {
+      width: 100%;
+    }
+    .footer p {
+      margin-top: 10vw;
+      font-size: 3.5vw;
+      text-align: center;
+    }
+    button{
+      font-size: 3.5vw;
+      padding: 2vw 2vw;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+ nav{
+ width: 70%;
+ height: 8vh;
+ padding: 0 5vw;
+ }
+ .homeSect1{
+  width: 70%;
+ }
+ .homeSect2{
+  left: 70%;
+  width: 30%;
+ }
+ .logo{
+  height: 4vh;
+  /* font-size: 6vw; */
+ }
+ .logo h1{
+  font-size: 4vw;
+ }
+ .logo h6{
+  font-size: 2vw;
+ }
+ #inta{
+  font-size: 3vw;
+ }
+ .main-text h4{
+  font-size: 2.4vw;
+ }
+ .img1 img{
+  /* width: 100%; */
+  height: 40vh;
+ }
+.main-img1{
+  width: 80%;
+  height: 30vh;
+ } 
+.main-img2{
+  width: 80%;
+  height: 30vh;
+ } 
+.main-img3{
+  width: 80%;
+  height: 30vh;
+ } 
+.main-img4{
+  width: 80%;
+  height: 20vh;
+ }
+ .slide-nav ul{
+  margin-top: 5vw;
+ }
+ .slide-nav ul li a{
+font-size: 2.3vw;
+ }
+
+ .detail{
+  margin-top: 3vw;
+  font-size: 2.1vw;
+ }
+ .social-icon  {
+  margin-top: 3vw;
+ }
+ .social-icon i {
+  font-size: 2.3vw;
+ }
+ .privacy {
+  margin-top: 3vw;
+ }
+ .privacy h5{
+  font-size: 2.3vw;
+ }
+ .laguage {
+  margin-top: 3vw;
+ }
+ .laguage a{
+  font-size: 2.3vw;
+ }
+ .lang-name span{
+  font-size: 2.3vw;
+}
+.footer p{
+  width: 100%;
+  text-align: center;
+  font-size: 2.3vw;
+}
+button{
+  padding: 1vw 1.2vw;
+  font-size: 2.5vw;
+}
+}

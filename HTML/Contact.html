@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Felder Elpen</title>
+      <link rel="stylesheet" href="/Style/home.css">
+      <link rel="stylesheet" href="/Style/Contact.css">
+      <link rel="stylesheet" href="/Style/About.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/themes/default.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/themes/default.date.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/themes/default.time.css">
+</head>
+
+<body>
+
+      <section id="contactForm">
+<div class="contact-sect1">
+  <nav>
+    <a href="/index.html">
+      <div class="logo">
+        <h1>Micky Jones</h1>
+        <h6>HAIR AND MAKE UP</h6>
+      </div>
+    </a>
+    <div class="nav-item">
+      <i id="inta" class="ri-instagram-line"></i>
+      <i class="ri-menu-line menubar"></i>
+    </div>
+  </nav>
+          <div class="text">
+            <h1>CONTACT</h1>
+          </div>
+          <div class="mainForm">
+            <div class="form-headind">
+                  <h2>KONTAKTIERE MICH</h2>
+                  <p>Für Hochzeit, Elopement oder Events bitte fülle dieses Kontaktformular aus.
+                        Ich freue mich über deine Nachricht an meine E-mail Adresse: aichnerviki@gmail.com
+                         Ich werde mich sobald wie möglich bei dir melden.</p>
+            </div>
+
+            <form id="contact" action="https://formspree.io/f/xwkgglrn" method="post">
+                  <div class="input-1-2">
+                        <input id="name" name="name" type="text" placeholder="Name:" required>
+                        <input id="email" type="email" name="email" placeholder="Email:" required>
+
+                  </div>
+                  <input type="text" style="display: none;" id="honeypot" name="honeypot" class="honeypot">
+                  <div class="input-3-4">
+                        <!-- <input  type="text" id="date" name="date" placeholder="Date of the Event" required> -->
+                        <input type="text" class="datepicker custom-picker" placeholder="Date of the Event">
+                        <input id="location" type="text" name="location" placeholder="Location:" required>
+                  </div>
+                  <div class="input-5-6">
+                        <input type="text" class="timepicker custom-picker" placeholder="Time of the Event">
+                        <select id="options" name="options" required>
+                          <option value="default" disabled selected>Styling quantity:</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                      </select>
+                  </div>
+                  <textarea name="message" id="textarea" rows="5" required placeholder="Other information:"></textarea>
+           <div class="subBtn">
+                 <button type="submit" class="submit">Submit</button>
+                 </div>
+                  </form>
+                  <div class="footer">
+                        <h2>Let's talk soon</h2>
+                        <p>Für mehr Haar und Make-up Inspirationen folge mir auf Instagram</p>
+                        <button>Follow Me</button>
+                      </div>
+      </div>
+</div>
+<div class="aboutSect2">
+      <div class="slide1">
+            <div class="closeIcon">
+            <i id="close" class="ri-close-large-line close"></i>
+          </div>
+            <div class="slide-nav">
+              <ul>
+                <li><a class="click" href="/index.html">HOME</a></li>
+                <li><a class="click" href="/HTML/About.html">ABOUT ME</a></li>
+                <li><a class="click" href="/HTML/Contact.html">CONTACT</a></li>
+<div class="list2">
+  <li><a class="click" href="/HTML/weeding.html">WEDDING</a></li>
+  <li><a href="#">IMAGE</a></li>
+  <li><a href="#">FASHION</a></li>
+  <li><a class="click" href="/HTML/Film.html">FILM</a></li> 
+</div>
+              </ul>
+            </div>
+            <hr>
+            <div class="detail">
+              <h3>Name LastName</h3>
+              <h3>84645 city</h3>
+              <h3><a href="#">info@emailaddress.com</a></h3>
+            </div>
+            <!-- Social icons ------------------------------------------------ -->
+            <div class="social-icon">
+              <i class="ri-instagram-fill"></i>
+              <i class="ri-mail-fill"></i>
+              <i class="ri-facebook-fill"></i>
+            </div>
+            <div class="privacy">
+              <h5>PRIVACY</h5>
+              <h5>IMPRINT</h5>
+            </div>
+            <!-- Languages ------------------------------- -->
+            <div class="laguage">
+             
+              <div class="lang-name">
+                <a href="">EN</a>
+                <span style="color: white;">/</span>
+                <a href="">DE</a>
+                <!-- <a class="active" href="">IT</a> -->
+              </div>
+            </div>
+          </div>
+</div>
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <p>Form Submitted Successfully!</p>
+    <button class="okBtn">ok</button>
+  </div>
+</div>
+
+      </section>
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="/JavaScript/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdn.rawgit.com/trentrichardson/jQuery-Timepicker-Addon/1.6.3/dist/jquery-ui-timepicker-addon.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- Pickadate.js JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/picker.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/picker.date.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.6.4/compressed/picker.time.js"></script>
+      <script src="/JavaScript/about.js"></script>
+      <script src="/JavaScript/contact.js"></script>
+       <script src="/JavaScript/script.js"></script>
+
+</body>
+
+</html>

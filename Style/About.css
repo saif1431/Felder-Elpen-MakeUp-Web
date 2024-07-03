@@ -1,0 +1,395 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: logo;
+  src: url("higuen.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7f5ec;
+}
+html:scrolling {
+  overflow-y: scroll;
+}
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutSect1 {
+  width: 78%;
+  height: 100%;
+
+}
+.aboutSect2 {
+  width: 25%;
+  height: 100vh;
+  background-color: #ac663e;
+  position: fixed;
+  left: 78%;
+}
+.logo1 h1 {
+  font-size: 3vw;
+  color: #003d3a;
+  font-family: logo;
+  font-weight: 400;
+}
+.logo1 p {
+  font-size: 1.2vw;
+  text-align: center;
+  margin-top: 0.6vw;
+}
+
+/* ---------------------About Main Content------------------------------------ */
+
+
+.aboutCrd{
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.aboutCards {
+  width: 100%;
+  max-height: 80vh;
+  margin-top: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2vw 4.5vw;
+  overflow: hidden;
+}
+.card1{
+  width: 40%;
+  height:100%;
+}
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.card2 {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card2 p {
+  font-size: 1.4vw;
+  font-family: "Asap", sans-serif;
+  padding-top: 2vw;
+}
+.aboutCards2 {
+  width: 100%;
+  height: 80vh;
+  /* background-color: green; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0vw 4vw;
+}
+.card3 {
+  width: 40%;
+  height: 100%;
+}
+.card4 {
+  width: 40%;
+  height: 100%;
+  -webkit-transform: translatseY(-13%);
+      -ms-transform: translateY(-13%);
+          transform: translateY(-13%);
+}
+
+.card4 img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.text h1 {
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 10vw;
+  color: #00524e;
+  font-family: logo;
+  font-weight: 400;
+}
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
+  /* align-items: center; */
+  margin-top: 3vw;
+}
+.contact-info h5 {
+  font-size: 1.4vw;
+  color: #444;
+  font-weight: 500;
+  font-family: "Asap", sans-serif;
+}
+.contact-info h4 {
+  font-size: 1.5vw;
+  font-family: "Asap", sans-serif;
+  font-weight: 600;
+}
+.btn {
+  width: 30%;
+}
+
+@media screen and (width > 300px) and (width < 768px) {
+  .aboutSect2 {
+    display: none;
+    z-index: 1000;
+    -webkit-transition: width 0.5s ease, -webkit-transform 0.5s ease;
+    transition: width 0.5s ease, -webkit-transform 0.5s ease;
+    -o-transition: transform 0.5s ease, width 0.5s ease;
+    transition: transform 0.5s ease, width 0.5s ease;
+    transition: transform 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .aboutSect1 {
+    width: 100%;
+    height: 100%;
+  }
+  .logo1 h1 {
+    font-size: 9vw;
+  }
+  .logo1 p {
+    font-size: 4vw;
+  }
+  .text h1 {
+    margin-top: 25vw;
+    font-size: 10vw;
+  }
+  .aboutSect1 {
+    width: 100%;
+  }
+  .aboutCards {
+    width: 100%;
+    min-height: 86vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+}
+  .card1 {
+    width: 90%;
+    height: 50vh;
+  }
+  .card2 {
+    width: 90%;
+  }
+  .card3 {
+    width: 90%;
+    margin-top: 4vw;
+  }
+  .contact-info{
+    gap: 5vw;
+  }
+  .card2 p {
+    margin-top: 6vw;
+    font-size: 4vw;
+  }
+  .card4 {
+width: 90%;
+height: 50vh;
+-webkit-transform: translateY(-0%);
+    -ms-transform: translateY(-0%);
+        transform: translateY(-0%);
+  }
+  .aboutCards2 {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vw;
+  }
+
+  .card3 h5 {
+    font-size: 4vw;
+  }
+  .card3 h4 {
+    font-size: 4vw;
+  }
+  .btn {
+    width: 40%;
+    padding: 3vw 1vw;
+    font-size: 5vw;
+    margin-top: 4vw;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .aboutSect2 {
+    display: none;
+    z-index: 1000;-webkit-transition: width 0.5s ease, -webkit-transform 0.5s ease;transition: width 0.5s ease, -webkit-transform 0.5s ease;-o-transition: transform 0.5s ease, width 0.5s ease;transition: transform 0.5s ease, width 0.5s ease;transition: transform 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .aboutSect1 {
+    width: 100%;
+    height: 100%;
+  }
+  .logo1 h1 {
+    font-size: 7vw;
+  }
+  .logo1 p {
+    font-size: 3vw;
+  }
+  .text h1 {
+    margin-top: 25vw;
+    font-size: 10vw;
+  }
+  .aboutSect1 {
+    width: 100%;
+  }
+  .aboutCards {
+    width: 100%;
+    max-height: 170vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+  }
+
+  .card1,
+  .card2 {
+    width: 90%;
+  }
+  .card3 {
+    width: 90%;
+    /* margin-top: -7vw; */
+  }
+  .card2 p {
+    margin-top: 5vw;
+    font-size: 4vw;
+  }
+  .card4 {
+    transform: translateY(-0%);
+    /* margin-top: 27vw; */
+  width: 90%;
+
+  }
+  .aboutCards2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+margin-top: 35vw;
+
+  }
+  .card3 h5 {
+    font-size: 4vw;
+  }
+  .card3 h4 {
+    font-size: 4vw;
+  }
+  .btn {
+    width: 40%;
+    padding: 2vw 3vw;
+    font-size: 5vw;
+  }
+}
+
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .text h1{
+    margin-top: 14vw;
+  }
+  .aboutSect1{
+    width: 70%;
+  }
+  .aboutSect2{
+    left: 70%;
+    width: 30%;
+  }
+  .card2 p{
+    padding-top: 5vw;
+    font-size:2.3vw ;
+  }
+  .aboutCards{
+    padding: 0 0;
+    height: 35vh;
+  }
+  .card4 img{
+    /* width: 40%; */
+    height: 50%;
+  }
+
+.contact-info h5{
+  font-size: 2.3vw;
+}
+.contact-info h4{
+  font-size: 2.5vw;
+}
+.card4{
+  height: 100%;
+  transform: translateY(0%);
+}
+.aboutCards2{
+  padding: 0 0;
+  margin-top: 2vw;
+  height: 6 0vh;
+}
+.btn{
+  width: 40%;
+}
+}

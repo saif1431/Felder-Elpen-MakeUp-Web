@@ -1,0 +1,223 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f5ec;
+}
+#Film {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.filmSect1 {
+  width: 78%;
+  height:100%;
+}
+.filmSect2 {
+  position: fixed;
+  left: 80%;
+  width: 20%;
+  height: 100vh;
+  background-color: #ac663e;
+}
+.main-content {
+  width: 100%;
+  height: fit-content;
+  /* background-color: teal; */
+  margin-top: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* gap: 1.5vw; */
+}
+.film1 {
+  width: 100%;
+  height: 40%;
+  /* background-color: yellow; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3vw;
+  padding: 1vw 9vw;
+  display: flex;
+  -webkit-box-align: center;
+      /* -ms-flex-align: center; */
+          /* align-items: center; */
+}
+.film1-div{
+      width: 25%;
+      height: 100%;
+      /* background-color: red; */
+}
+.film1-div2 {
+      width: 100%;
+      height: 100%;
+      /* background-color: green; */
+}
+.film1-div2 h4{
+font-size: 1.5vw;
+font-family: "Asap", sans-serif;
+font-weight: 600;
+}
+.film1 img{
+      width: 100%;      
+      height: -webkit-fit-content;      
+      height: -moz-fit-content;      
+      height: fit-content;
+}
+.film1-div2 ul{
+      margin-top: 1vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: .7vw;
+}
+.film1-div2 ul li{
+      font-size: 1.2vw;
+}
+.film1-div2 ul span{
+      font-weight: 600;
+      font-family: "Asap", sans-serif;
+}
+
+@media screen and (width > 300px) and (width < 768px){
+
+      .main-content{
+            margin-top: 8vw;
+      }
+      .filmSect2{
+            display: none;
+      }
+      .filmSect1{
+            width:100% ;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+}
+
+      .film1{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: start;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            gap: 2vw;
+            padding: 10vw ;
+      }
+      .film1-div{
+            width: 70%;
+            height: 100%;
+            /* background-color: red; */
+      }
+      .film1-div2{
+            width: 90%;
+      }
+      .film1-div2 ul li{
+            font-size: 4vw;
+      }
+.film1-div2 h4{
+      font-size: 5vw;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+      /* Your CSS rules for small tablets in portrait mode */
+
+      .film1-div2{
+            width: 100%;
+      }
+      .filmSect1{
+            width: 100%;
+      }
+      .main-content{
+            width: 100vw;
+            height: fit-content;
+            gap: 2vw;
+            margin-top: 8vw;
+      }
+      .film1{
+            width: 100%;
+            height: 40%;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            gap: 10vw;
+      }
+      .film1 img{
+            width: 20vw;
+      }
+      .film1-div2 h4{
+            font-size: 3vw;
+      }
+      .film1-div2 ul li{
+            font-size: 2.8vw;
+      }
+    }
+
+
+
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+      .filmSect1{
+        width: 70%;
+      }
+      .film1{
+            width: 100%;
+            padding: 2vw 5vw;
+            gap: 2.5vw;
+            /* height: 30vh; */
+      }
+      .film1 img{
+            width: 100%;
+      }
+      .film1-div2 h4{
+            font-size: 2.3vw;
+      }
+      .film1-div2 ul li{
+            font-size: 2vw;
+      }
+    }
